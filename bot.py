@@ -47,14 +47,14 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/GreyMatters_bots_discussion"),
-						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/GreyMatter_bots"),
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
+						InlineKeyboardButton("🔆 Support 🔆", url="https://t.me/LegendBot_OP"),
+						InlineKeyboardButton("🔅 Channel 🔅", url="https://t.me/LegendBot_AI"),
+						InlineKeyboardButton("👥 About ", callback_data="aboutbot")
                                         ],
                                         [
-						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Sᴏᴜʀᴄᴇ ", url="https://GitHub.com/GreyMatter_bots/TG-FileStore"),
-						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/GreyMatter_bots")
+						InlineKeyboardButton("👨‍🔧 Devs ", callback_data="aboutdevs"),
+						InlineKeyboardButton("💢 Source ", url="https://GitHub.com/LEGEND-AI/TGFILE"),
+						InlineKeyboardButton("🚸 Owner ", url="https://t.me/LegendBoy_XD")
 					],
                                         [
 						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
@@ -93,7 +93,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/GreyMatters_bots_discussion)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/Legend_AI)",
                                      disable_web_page_preview=True)
             return
 
@@ -286,11 +286,11 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
 					[
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/GreyMatter658/TG-FileStore")
+						InlineKeyboardButton("🗂 Source Code", url="https://github.com/LEGEND-AI/FILE-STORE")
 					],
 					[
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ Mᴀsᴛᴇʀ", callback_data="aboutdevs"),
-						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="gotohome")
+						InlineKeyboardButton("👥 About Master", callback_data="aboutdevs"),
+						InlineKeyboardButton("🏠 Home ", callback_data="gotohome")
 					]
 	        ]
             )
@@ -304,11 +304,11 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                                         [
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://github.com/GreyMatter658/TG-FileStore")
+						InlineKeyboardButton("🔅 Source Code ", url="https://github.com/LEGEND-AI")
 					],
 					[
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ", callback_data="aboutbot"),
-						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="gotohome")
+						InlineKeyboardButton("👥 About ", callback_data="aboutbot"),
+						InlineKeyboardButton("🏠 Home ", callback_data="gotohome")
 					]
                 ]
             )
@@ -322,17 +322,17 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/Greymatters_bots_discussion"),
-						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/GreyMatter_bots"),
-						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
+						InlineKeyboardButton("🔆 Support 🔆", url="https://t.me/LEGENDBOT_OP"),
+						InlineKeyboardButton("🔅 Channel 🔅", url="https://t.me/LegendBot_AI"),
+						InlineKeyboardButton("👥 About ", callback_data="aboutbot")
                                         ],
                                         [
-						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Sᴏᴜʀᴄᴇ ", url="https://github.com/GreyMatter658/TG-FileStore"),
-						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/GreyMatter_bots")
+						InlineKeyboardButton("👨‍🔧 Devs ", callback_data="aboutdevs"),
+						InlineKeyboardButton("💢 Source ", url="https://github.com/LEGEND-AI"),
+						InlineKeyboardButton("🚸 Powered By", url="https://t.me/LegendBoy_XD")
 					],
                                         [
-						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
+						InlineKeyboardButton("🔐 Close ", callback_data="closeMessage") 
 					]
                 ]
             )
@@ -368,7 +368,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/GreyMatters_bots_duscussion).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/LegendBot_OP).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -380,12 +380,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔅 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/GreyMatters_bots_discussion"),
-						InlineKeyboardButton("🔆 Cʜᴀɴɴᴇʟ", url="https://t.me/GreyMatter_bots")
+						InlineKeyboardButton("🔅 Support ", url="https://t.me/LegendBot_OP"),
+						InlineKeyboardButton("🔆 Channel ", url="https://t.me/LegendBot_AI")
 					],
 					[
-						InlineKeyboardButton("🤖 Aʙᴏᴜᴛ Bᴏᴛ", callback_data="aboutbot"),
-						InlineKeyboardButton("👮 Aʙᴏᴜᴛ Dᴇᴠ", callback_data="aboutdevs")
+						InlineKeyboardButton("🤖 About Bot", callback_data="aboutbot"),
+						InlineKeyboardButton("👮 About Devs", callback_data="aboutdevs")
 					]
 				]
 			)
