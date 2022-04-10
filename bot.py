@@ -318,14 +318,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-						InlineKeyboardButton("🔆 Support 🔆", url="https://t.me/LEGENDBOT_OP"),
-						InlineKeyboardButton("🔅 Channel 🔅", url="https://t.me/LegendBot_AI"),
-						InlineKeyboardButton("👥 About ", callback_data="aboutbot")
+						InlineKeyboardButton("👨‍💻 Support 👨‍💻", url="https://t.me/LEGENDBOT_OP"),
+						InlineKeyboardButton("⚜ Channel ⚜", url="https://t.me/LegendBot_AI")
                                         ],
                                         [
-						InlineKeyboardButton("👨‍🔧 Devs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Source ", url="https://github.com/LEGEND-AI"),
-						InlineKeyboardButton("🚸 Powered By", url="https://t.me/LegendBoy_XD")
+						InlineKeyboardButton("❤ About ❤", callback_data="aboutbot"),
+						InlineKeyboardButton("💟 Owner 💟", url="https://t.me/LegendBoy_XD")
 					],
                                         [
 						InlineKeyboardButton("🔐 Close ", callback_data="closeMessage") 
