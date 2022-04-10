@@ -9,9 +9,7 @@ from handlers.helpers import str_to_b64
 async def ReplyForward(message: Message, file_id: int):
     try:
         await message.reply_text(
-            f"⚜ **Here is Shareable Link Of You Given Media:**\n"
-            f"🔹 https://t.me/{Config.BOT_USERNAME}?start=LegendBoyZ_{str_to_b64(str(file_id))}\n\n"
-            f"🔸 __To Get the Stored Media, just open the given link!__",
+            f"⚜ **Here is Your Media**"
             disable_web_page_preview=True, quote=True)
     except FloodWait as e:
         await asyncio.sleep(e.x)
