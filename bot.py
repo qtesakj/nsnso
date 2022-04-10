@@ -45,13 +45,11 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔆 Support 🔆", url="https://t.me/LegendBot_OP"),
-						InlineKeyboardButton("🔅 Channel 🔅", url="https://t.me/LegendBot_AI"),
-						InlineKeyboardButton("👥 About ", callback_data="aboutbot")
+						InlineKeyboardButton("👨‍💻 Support 👨‍💻", url="https://t.me/LegendBot_OP"),
+						InlineKeyboardButton("⚜ Channel ⚜", url="https://t.me/LegendBot_AI")
                                         ],
                                         [
-						InlineKeyboardButton("👨‍🔧 Devs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Source ", url="https://GitHub.com/LEGEND-AI/TGFILE"),
+						InlineKeyboardButton("💝 About 💝", callback_data="aboutbot")
 						InlineKeyboardButton("🚸 Owner ", url="https://t.me/LegendBoy_XD")
 					],
                                         [
@@ -75,7 +73,7 @@ async def start(bot: Client, cmd: Message):
             for i in range(len(message_ids)):
                 await SendMediaAndReply(bot, user_id=cmd.from_user.id, file_id=int(message_ids[i]))
         except Exception as err:
-            await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
+            await cmd.reply_text(f"Something went wrong May Be My [Owner](https://t.me/LegendBoy_XD) Deleted Your Data!\n\n**Error:** `{err}`")
 
 
 @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.edited & ~filters.chat(Config.DB_CHANNEL))
