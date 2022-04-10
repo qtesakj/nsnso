@@ -92,8 +92,8 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/LegendBot_AI"),
-                  InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/LegendBot_OP")]]
+                 [InlineKeyboardButton("💝 Channel 💝", url="https://t.me/LegendBot_AI"),
+                  InlineKeyboardButton("⚜ Support ⚜", url="https://t.me/LegendBot_OP")]]
             ),
             disable_web_page_preview=True
         )
