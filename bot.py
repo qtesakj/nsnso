@@ -49,7 +49,7 @@ async def start(bot: Client, cmd: Message):
 						InlineKeyboardButton("⚜ Channel ⚜", url="https://t.me/LegendBot_AI")
                                         ],
                                         [
-						InlineKeyboardButton("💝 About 💝", callback_data="aboutbot")
+						InlineKeyboardButton("💝 About 💝", callback_data="aboutbot"),
 						InlineKeyboardButton("🚸 Owner ", url="https://t.me/LegendBoy_XD")
 					],
                                         [
